@@ -1,8 +1,10 @@
-{
+require("dotenv").config();
+
+module.exports = {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
+    "username": "procces.env.DB_USERNAME",
+    "password": "procces.env.DB_PASSWORD",
+    "database": "todolist_app",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
